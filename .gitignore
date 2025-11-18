@@ -1,0 +1,13 @@
+# macOS cruft
+.DS_Store
+
+# Optional: ignore the "download" working dir
+zOS-JDW-PoW DWN/
+
+# Optional: ignore screenshots directory specifically
+Cobol/cobol_course_Screenshots/
+
+# Optional: ignore subtitle dump files if you don't want them tracked
+Cobol/cobol_course_notes/*.vtt
+Cobol/cobol_course_notes/*.txt
+EOF
