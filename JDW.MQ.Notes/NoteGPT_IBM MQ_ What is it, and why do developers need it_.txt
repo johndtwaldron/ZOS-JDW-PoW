@@ -1,0 +1,16 @@
+
+00:00:05
+hi my name's max and i'm a developer for ibm mq today we're going to be talking a little bit about ibm mq what is it why do we need it mq is the wiring between different parts of the business and between a business and other organizations too what it lets you do is take data from wherever it's created to wherever it needs to go so you might say why do i need to do this why can't i just use rest for example to allow parts of my my organization parts of my applications to communicate and that's a really good question because you can absolutely do that it will work you can allow two applications to talk using rest but if you do there are a few things you might need to consider so first of all you've got to think about this connection if both of those applications aren't online and ready to do some work at the same time
+
+
+00:01:06
+then that's not going to work because the application that wants to send a message is going to be waiting for this application to be ready to receive it and so it won't be able to do any of the work and that can be a real problem also you've got to think about security and how you're going to secure this connection so it can't be eave dropped upon as well as that you've got to think about disaster recovery and resilience like what do you do if something goes wrong when this message is being sent how do you deal with a possible loss of that information finally you're going to need to consider scalability so if i look at the applications maybe i've got two applications that need to talk to each other but as i scale up i may have more applications that need to talk and all communicate with each other and when this happens we might have some serious problems because now we've got to write and own all of this code which isn't really helping us with our business it's really just joining everything together mq is a form of asynchronous messaging now
+
+
+00:02:09
+what that means is that applications that want to communicate do not have to be online simultaneously this is really useful because it means they process messages when they're ready to process them meaning that the whole system is more resilient because these applications can run at different speeds sometimes as part of a business operation multiple actions need to happen for example if i go to the store and i pay for my groceries i need to know the money is going to be debited from my account and it's going to be credited to the retailer's account if something goes wrong at any part of that i want this whole thing to stop and start again that's called a transaction and that's something that mq is very good at so in summary mq takes care of all of these things it lets you focus on adding business value to your applications thanks for
+
+
+00:03:17
+listening you
+

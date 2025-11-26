@@ -1,0 +1,24 @@
+
+00:00:06
+Have you ever wondered how money is transferred from your bank account when you use an ATM or UPI? Behind the scene, there is a system called IBM MQ that makes sure your request is delivered without fail. Hi, myself Raesh. I work as at mainframe MQ. In this video, I will explain you what is IBM MQ, why do we need MQ, key features and real time example.
+
+
+00:00:51
+What is IBMQ? MQ means message cube. It is like a post office for computer program. One program puts a message in MQ for example like dropping a letter in a postbox. MQ chip is saved and delivered to another program. Why do we need MQ? In big companies like bank, healthcare etc.
+
+
+00:01:29
+ many application needs to talk to each other. If without MQ means if the receiver system is down the message is lost which makes a huge loss to the company. with MQ means message wait in the queue until the receiver is ready. This means no me no message is lost and delivery is guaranteed. Now let's see about key features of MQ. First one is safe messenger are not lost.
+
+
+00:02:15
+Second, flexible works on different systems like mainframe, cloud, Windows, Linux. Third one is independent. Sender and receiver don't need to be online at same time. Fourth, secured. Only authorized apps can send or receive. Now let's let us see the real time example. For real time example, I took ATM story. You put your ATM card and request 1,000 rupees.
+
+
+00:02:59
+ATM machines sends the request to back end MQ. Core banking system takes a message, checks your balance and approve it. When MQ send back the reply to the ATM gives you cash back even if the bank system was busy for a few seconds, MQ end your messages safely. So in simple simple terms IPMQ is like a post office for messages between two application.
+
+
+00:03:47
+It makes sure the messages are delivered safely and to the correct press. Thanks for watching this video. Please like and subscribe and comment below. Thank you.
+

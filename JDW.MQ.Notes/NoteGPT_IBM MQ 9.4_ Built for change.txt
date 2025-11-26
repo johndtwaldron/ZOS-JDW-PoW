@@ -1,0 +1,24 @@
+
+00:00:00
+Hi, I m Simone Jain with the MQ Developer  Experience team.  With the release of IBM MQ 9.4,   let s have a look at some of the latest features  for MQ on  Multiplatforms! There are 3 keys   themes with this release: observability, security,  and connectivity IBM MQ now includes support for   OpenTelemetry, for improved observability.
+
+
+00:00:21
+    The Open telemetry framework provides end-to-end   tracing of messages as they flow  between your  applications, allowing you to react to issues   faster!  Open telemetry provides you with  three ways to monitor your systems traces,   metrics, and  logs which provide you with valuable  insights to optimise performance. There are also   some exciting new changes to the MQ console,  that provide you with more  control over your   infrastructure than ever before!  The MQ console  overview tab makes it easy to see the overall   state of your queue manager  at a glance and react  to any problems quicker. Application dashboards   allow you to view the applications putting  messages to queues as  well as the relationships   between the different queues. And now the MQ  console uses localised time zones, with timings   adjusted based on each  queue manager's location,  making it easier to understand your global queue   manager  estate. The introduction of token-based  authentication with JWT enables passwordless     authentication, meaning your applications can  operate in a secure, Multi-Factor  Authentication  
+
+
+00:01:24
+environment.  This provides centralised identity  management, with applications simply needing to   provide  these tokens upon connection to be  authenticated.  Token-based authentication   provides 4 key benefits: Increased security  by eliminating the need to store and transmit   passwords Flexibility since tokens can be used  across multiple endpoints for secure collaboration   across  enterprises.
+
+
+00:01:45
+ Scalability as using a  single JSON web key sets issuer allows your   applications to authenticate  with many services  at once instead of individually And easier   management of certificate rotation, expiry, and  revocation. On MQ Advanced, Native HA can now be   deployed into Kubernetes!  Native HA provides safe  and fast recovery from failure, ensuring no loss   or duplication of  messages. And new for 9.
+
+
+00:02:10
+4,  you can increase the speed of replication using   LZ4 compression which is a  lossless compression  algorithm; and there is also automated recovery   of damaged objects,  eliminating the need for  manual intervention.  And last in my list for   9.4, you can now deliver data seamlessly and  exactly once between  IBM MQ and Apache Kafka,   using fully IBM-supported connectors.
+
+
+00:02:35
+  With  bidirectional exchanges between MQ and Kafka,   you can tap into mission-critical data  and act  on this in real time, providing you with valuable   insights across your enterprise.  These are just  the highlights, but there s so much more that s   new in 9.4 and you can find  the full details in  the documentation linked in the description!
+

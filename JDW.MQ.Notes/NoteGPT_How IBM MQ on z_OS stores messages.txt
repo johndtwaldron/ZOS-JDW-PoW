@@ -1,0 +1,12 @@
+
+00:00:01
+so how does physical storage work on mq for zos it's really important to talk about how physical storage actually works with mq because at its core mq is a temporary data storage device for messages and message data flowing through an Enterprise's infrastructure so when we talk about message storage we're going to be talking about four key terms page sets buffer pools storage classes and log records so page sets are vsam linear data sets that will actually hold the message data while it's in mq and while it's on a queue your messages are going to be when they're initially put onto a queue put on a page set when they're gotten the page set is going to be freed up for reuse by further puts of message later on buffer pools allow for buffering access to page sets because you have to read to and write from page sets that requires a
+
+
+00:01:04
+bit more processing whereas buffer pools are short-term storage so if you for example have a message that you immediately put and then get from your queue it might never actually have to go to page sets and that entire processing can take place just in the buffer pools for storage classes storage classes actually map different cues when they're initially defined to a particular page set so if you define a new queue it will be defined with a storage class in mind and then that storage class has already hopefully been defined with one or more page sets associated with it so storage class allows for mapping to occur with log records log records record any changes to objects that are held on page sets and operations for persistent messages in the case in the event of any
+
+
+00:02:05
+lost message data these log records are then written to a log data set called the active log data set the name and the size of the active log data set will be held in the bootstrap data set this again only applies for cues that are non-shared on Z OS so shared cues will use different physical storage resources and mechanisms
+

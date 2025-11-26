@@ -14,6 +14,6 @@ Personal z/OS / COBOL / mainframe power-of-work (PoW) repo.
 
 ## Goal
 
-A high-level but practical cheat sheet and knowledge base
+A high-level but practical crib sheet and knowledge base
 to operate as a solid z/OS COBOL/legacy programmer, sysprog,
-developer, and infrastructure specialist.
+developer, morderniser and infrastructure specialist.

@@ -1,0 +1,16 @@
+
+00:00:00
+hi I'm Dorothy Quincy and I'm a technical specialist for mq on zos in the Washington system center with the announcement of IBM mq version 9.4 I'm excited to walk you through the newest features for zos the mq Kafka connectors enable customers to stream a copy of message data from mq into Kafka or vice versa if you have a transaction running through zos like a credit card purchase and you only want an event to admit if that transaction commits that might be a really good use case for using the Kafka connectors now we have updated the connectors so that we can assure exactly once delivery of messages our customers use mq with Mission critical messaging for its exactly once for liability so now we've extended this to our integration with Kafka you can now administer and configure buffer pools page sets and storage classes via the mq web console this increased functionality
+
+
+00:01:00
+via the console enables the next generation of mq Administrators to interact with mq objects and storage in an intuitive browser interface SMF data the performance data rolled off of mq for zos now has increased granularity new enhancements provide per Q statistical data laying the foundation for piping statistics into analytics tooling platforms this is really valuable because statistics data requires minimal overhead on zos to collect but it contains really rich information for example you can keep track of the time between messages being put on a queue and then being destructively read giving you any insight if latency is building up on that queue we've upgraded from 31-bit to 64-bit storage in the channel initiator what this means is that a larger number of applications can connect to a q manager at the same time this is particularly useful for customers using large messages
+
+
+00:02:00
+or many Channel instances zhyperlink is a zos feature that reduces IO latency by providing a fast and direct communication path between CPU and IO in 9.4 using zhyperlink with mq improves log right speeds by up to three and a half times preventing bottlenecks for persistent messages take a look at the documentation Linked In the description for a deeper dive on each new feature or see the video linked here for more information on mq 9.
+
+
+00:02:32
+4 for multi platforms
+

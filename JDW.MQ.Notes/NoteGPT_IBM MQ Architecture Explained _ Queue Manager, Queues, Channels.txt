@@ -1,0 +1,56 @@
+
+00:00:02
+Hi guys, welcome back. Today we will explore about IBM MQ architecture explaining what is Q managers, cues, channels and application step by step. Let's see what is Q manager. The Q manager which denotes as Q MGR is the core component of MQ. It controls cues and ensure proper delivery of messages to the destination Q manager.
+
+
+00:00:47
+Types of cues. First one is local Q. A local Q stores message within the same Q manager. Second, remote Q. A remote Q is a pointer to a queue in another Q manager. It does not store messages itself. It forwards messages to the target Q. Third one is alias Q. An all Q is like a shortcut or direct to another que.
+
+
+00:01:19
+ It allows multiple cues to point to the same destination making message routing flexible. Fourth one is model Q. Model Q is a template used to create dynamic cues at runtime. it it is never used to store messages directly. In under local Q there is another type of Q called transmission Q or exhibit Q. This this also holds the messages into it.
+
+
+00:02:02
+This this is just a summary of the types of Q. First one what what we have seen is local Q. The use of local Q is stores or world messages in the same Q manager. It has the ability to hold the messages in the same Q manager. Second is remote Q points to the another Q manager. Allows Q read to another Q. model Q template for dynamic cues.
+
+
+00:02:41
+Now let's see types of MQ channels. First one is sender res channel. sender which is denoted as SDR depends on the sender Q manager which sends message to another Q manager and another one is receiver which is denoted as RCVR defined on the receiver end Q manager. It listens for incoming messages. Together they ensure reliable Q manager one to Q manager to message delivery.
+
+
+00:03:26
+In pointto-point architecture, the sender and receiver channel name should be equal and it communicates through TCP IP and second type is client connection CL coN. It is denoted as this cl. It is a temporary channel defined on the client side to connect to the server Q manager which is used for request response or ADOC client connect connections.
+
+
+00:04:04
+Third type is server connection SV or C N. It connects a server application to the Q manager over TCP IP. Allows application to put and get messages to the queue on the Q manager. And four fourth type is cluster channels. It is used in MQ clustering for automatic message routing between multiple Q managers.
+
+
+00:04:33
+ It reduces um manual creation of sender and receiver channel. In the MQ clustering architecture, uh there is no sender or receiver channel. It's a key point. Now let's see a summary for easy record. What we see first is senders channel. Thunder channel is used to send messages from source Q manager. Second one receiver.
+
+
+00:05:07
+ Receiver messages on target Q manager. And third type is server connection which connects client application to Q manager. Fourth one is client connection. Temporary client to Q manager connection. And another type is cluster channel author routes messages in MQ cluster. These are uh just a point to highlight for a quick understanding and application.
+
+
+00:05:47
+ Application are the producers and consumer of the for messages. uh from uh MK side the application team will put the message uh with the help of batch or uh any other form and the messages will pass to the MQ and the end end which means uh which we mentioned as consumers they will get through the batch stop or any other form and the messages is delivered to the end user.
+
+
+00:06:22
+ Here I have explained with the simple example that is core banking system uh which uh sends transaction messages. This uh be a part of reduces and consumers are through mobile apps receive messages for customers. And let's uh let's see a summary point summary of IBM MQ architecture. First one what we see is Q manager. The Q manager which controls cues and channel.
+
+
+00:07:04
+ Uh Q manager is like manager in the project which uh the Q manager only need to handle all the uh connectivity Q channels and proper delivery of messages. And the second one is Q. Um there are different types of cues. Ignore this one. Ignore this one. Uh in the in Q what there are many types of Q like local Q, remote Q, alias Q, model Q and etc.
+
+
+00:07:44
+ Only local key can hold the message. Make a note of it. And third one is channel. We have seen different types of channel. The channel the main aim of the channel is move messages between system from one system to another system and another is application. Application or producers and consumer. producers who send the message and the consumer who receive the messages.
+
+
+00:08:22
+Thank you.
+

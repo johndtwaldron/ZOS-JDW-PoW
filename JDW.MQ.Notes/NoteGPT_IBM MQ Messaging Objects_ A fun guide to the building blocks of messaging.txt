@@ -1,0 +1,16 @@
+
+00:00:00
+hey there in this video we'll dive into the fundamental building blocks of messaging including messages channels cues and queue managers which are all called the messaging objects we'll learn about the rules and how they work together to create a seamless messaging environment first let's talk about messages messages are the heart of the messaging system and they come in three key parts first we have the payload this is the actual content of the message which can be anything from plain text to Binary data we also have the descriptor which is the messages ID card containing important metadata like the message type priority and more and we also have the properties these are metadata attributes associated with the message that can be used for filtering routing or providing additional context these properties can include priority levels content type message expiration time and custom properties specific to a particular application
+
+
+00:01:01
+it's like sending a letter you have the content inside the envelope the address and postage on the outside and the whole package gets delivered next up we have channels the highways of the messaging world channels are the communication Pathways that enables messages to travel between the Hue manager Networks channels are very configurable in mq but broadly there are just two types sender channels these initiate the connection and send messages and receiver channels these accept incoming connections and receive messages imagine our message is a car and the channels are the rows taking it to assassination channels Define certain behaviors in your messaging system and it allows you to access certain objects now let's explore cues the inbox of our messing World cues are responsible for temporarily storing messages until they are processed by receiving applications there are different types of queues and
+
+
+00:02:01
+for various purposes like local cues they hold messages for local applications remote cues they act as placeholders pointing to a queue on another queue manager and Alias cues there are nicknames for other cues making it easy to switch between Target cues cues insurer messages are kept safe and organized ready for delivery when the time is right finally we've got the queue managers the traffic controllers of the messaging world Q managers are responsible for managing the overall flow of messages they create and host queues channels and other messaging objects they also handle message routing security and Recovery ensuring messages reach their destination safely and efficiently in addition to all of that queue managers play a crucial role in holding and managing storage for messages
+
+
+00:03:03
+ensuring that the messaging system can handle high volume of data without compromising performance and there you have it the key building blocks of ibmq messages channels queues and queue managers each plays a vital role in ensuring that messages are transported stored and managed efficiently together they create a powerful and seamless messaging environment that can drive your business forward
+

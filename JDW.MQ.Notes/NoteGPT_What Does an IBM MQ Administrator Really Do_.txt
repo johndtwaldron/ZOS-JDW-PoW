@@ -1,0 +1,10 @@
+
+Today I will explain you what MQ admin actually do. Think of MQ which is message cube like a post office before MQ program. Programs send messages and MQ ensure they reach the right destination safety and on time. As a MQ admin, my job is to safeguard the messages. Here what that really means.
+
+ First installation and configuration. I installed MQ objects on main system and configure cues channels and listeners etc. So programs can communicate properly and safely. Second, migration and upgrades. Whenever a new MQ version comes, I upgrade or migrate the system without affecting the business operation. Third, patching and maintenance.
+
+ I apply patches and fixes to to keep the system secure, stable, and error-free. At the time of recording, the latest version of IBM MQ is 9.4. Fourth one, monitoring and troubleshooting. I monitor cues and channel and quickly identify and fix any stuck messages or errors. Fifth one, security and access control. I control who can send or receive messages, making sure everything is safe.
+
+Sixth, performance tuning. I optimize cues and channels so messages can move faster and effectively. Finally, finally, documentation and support. I maintain SOPs and provide support to developers or other team where needed. Why this is why is this important? Why in big companies like banks, airlines or retail giants, thousands of applications talk to each other every second.
+
+ If MQ fails, it can bring operation a huge loss. That's why MQ admins are crucial for smooth communication. So basically I installed, configure, secured, upgrade, do patchwork, monitoring and troubleshoot MQs, making sure messages flow perfectly every time. Conclusion. If you found this helpful, please like, share, and subscribe for more mainframe and MQ tips. Thank you.

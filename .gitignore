@@ -11,3 +11,8 @@ Cobol/cobol_course_Screenshots/
 Cobol/cobol_course_notes/*.vtt
 Cobol/cobol_course_notes/*.txt
 EOF
+
+Myur.NOTES.txt
+
+# everything under app for now 
+/App*

@@ -1,0 +1,48 @@
+
+00:00:03
+hello all welcome back and now as as you know that we have already completed a and the mq series we have seen how to create a q manager through this console and this mq Explorer and have to we see I've created the huge topic and channels and cluster even now we are going to see everything from the command prompt or you can see also console how can we create the queue managers and everything in details in this in this structure we are going to see how we can create a key manager delete the key manager how can we see the status of the queue managers and various method of stopping the accumulators we can see here so first of all if you want to see how many cumulators see running at our end we have to use a command DSP M Cube if you enter this you can see that I apparently
+
+
+00:01:03
+one two three four five six seven two two four two six seven cuminators are there and some of them are stopped and some one of them is running and it's a similar thing you can see here that the same Community there there and one is running start down I have made it stopped if you want to see what is the installation path of these key managers if you want maybe questions might came in mind what is the installation path if you want to see just you have to use the command the spmq minus o installation you can see these are the installation path see program files IBM iib and this everything the two if you want to list there is seven user I want to create one more q a reps so how can we create you have to use the command this accurate
+
+
+00:02:04
+CRT MQM then we have to put any measure name whatever with the piece let me do q m five I am going to create a helium 5 images just click you can see it has been created user DSP mq to see it help me created a lot you can see this has been created but currently once you create it will be in a stop test state so you need to start that you start how can we start the community static machine we have to use HDR MQM then qmail name qm5 after that you can see it will be a start this is a DSP and QTC status it currently running you can see it is running now you can see from here also it will be running just using a refresh you can see it will be done you can see now it is included this has been in this way you can create
+
+
+00:03:05
+a here and we can stop if you use the end MQM in MQM 5 human name qm5 it will stop future dspmq it will it is currently increasing increasing means something like that some work is going on inside so it will take a few seconds to stop if you now use a dspmq you can see it will be stopped you can see it is now as normally stopped you can see also here from the face you can see it registered but there are many times it happened the issue a key manager takes long time to stop you may takes long time to stop so we have various method to stop we can do a stop of the camera in
+
+
+00:04:05
+various way you can first if you use let me start the first first let's understand the controlled way if now it is a start date is any first controlled control way you have used you have a command let me go show you if you see here there are various method to stop first is the end MQM minus C and the key mirror name it is same same as the in the MQM and Q measure name the research called as a control desktop let me show you if you do in the MQM minus C and get qm5 it will stop simple as as Indian Kim there is another way to stop you can see it is now in closing state if you see the spmq now it will be
+
+
+00:05:08
+stopped it is stopped another way is called the next way is the waiting waiting alternatively abnormal stopping this is also a normal stopping and we do in other way that in them came your name in similar manner you can command for this also but it is called waiting waiting for Q managers what is difference between once you once I click on the end name Q minus C it will command prompted go to go back but if you see if you do here let me start it now it is started I hope if I if I if I do a in them game in MQM minus w
+
+
+00:06:09
+M5 new you can see it is from command prompt that's not quickly come back it is something like waiting for the criminal to end it will command prompt will be back once the documentaries completely stop you can if you see here now you have to be just this is PM View DJ stopped the difference between this difference only thing is that once you de hit this command command prompt will be back and everything is going in back but if you this minus W it will wait till the all process to be done then after that command prompt will come back now this is a minus I command if you use if you see here let me start again now it is just started is there another way is the end MQM
+
+
+00:07:11
+minus I identify this is used this is mainly used if you tried all the previous thing it is still not working and it is the user minus I minus I the immediate immediately you want to stop everything whatever the working going you want to stop it and you want to start the game here you're going to stop the Q measure then you have to use minus I if you see here you can see just tsp you can see here ended immediately something in order earliest you earlier you can see that indeed normally but here you can see that Indian immediately it means it quickly in the Tank Engine it always stop work that are going will be going stop the state and it will stop the QR let me start and try the last way and let me start it now it is started
+
+
+00:08:15
+last last one is the preventive step and we we don't prefer this in MK minus P this is called a prevent primitive shutdown and this is the last option if anything is above not working still then you have to use this because something broke to your system something had give the abnormability in our key measure so we don't prefer these options but here I I have not created anything it is just communicated so I can try remove it will not reflect anything to me but in real environment we don't record that let me use that in the MQM minus w n q m 5. which is waiting for the sorry I have used the wrong command I have to use minus P but in history I have used the minus w
+
+
+00:09:17
+let me start it then I will reach again right one what we're going to show you in the MQM minus p then Q M5 now it is indeed let me use dspmq to see you can see also interdiminately this is also a type of interdemptedly but different is that it is a something that used for last option if this I minus I is not working then you have to use this these are the various method method you can stop the accumulator let me start that okay now I should I find if I want to uh delete this queue measure I find to if I want to delete this qm5 how can I delete
+
+
+00:10:20
+this if currently I don't require this qm5 I want to delete this so if for this you have to use the DLT DLT MQM give him five Humanity but currently it will not work why it will not work because if the key manager is running then it will not work first you need to stop the images then you have to delete the theme Here let me hit it is giving error that currently the wave is running it will not stopped for this you have to first stop yet for you to first stop it and then you have to delete cuddling using estate let me do now it will be stopped it has
+
+
+00:11:23
+been stopped now now once you do a delete it will work if your DLT MQM now qv5 it will delete it now you can see it is given that the qsl is deleted now if you see the dspmq DSP empty then it is no you can you can see there is no queue in five you can see here also if you do a refresh it will go it's cool frame 5 is not there in this way you can do something I have learned today the how can we create a computer stopping images and everything next we have learned more about the how to create a queue and everything in detail so you don't need to worry for now from
+

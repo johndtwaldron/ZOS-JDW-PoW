@@ -1,0 +1,64 @@
+
+00:00:09
+Hi friends, in this video we are going to discuss about IBM MQ pointto-point architecture with live example. Let's see what is pointto-point MQ architecture mean. Pointtooint MQ architecture is the simplest form of transferring messages from one Q manager to another Q manager through channels. The key rule we must remember is the Q manager name must be unique and translation Q which is a special type of local Q.
+
+
+00:00:48
+Only local Q can hold the messages. The sender channel name and receiver channel name must be same. These are the important points we need to keep in mind. Now let's walk through into the architecture. Now refer with this image. We transfer messages from Q manager one to Q manager 2. See this is Q manager one and this is Q manager 2.
+
+
+00:01:25
+the Q manager one which is sender side which contains remote Q eximate Q and send care channel. These are the components inside remote Q manager one. Under remote Q manager one we have remote Q, XM Q and send channel. Inside remote Q we have remote Q manager, remote Q name and eximmit Q name. See under remote Q we have parameters such as remote Q manager, remote Q name and eximmit Q.
+
+
+00:02:05
+ Same as under exit Q we have parameters like initiation Q process trigger data. Now let's see Q manager 2 which is a receiver side. You can see here in this diagram in Q manager too it has local Q and receiver channel. This name these namings are used for live example. We will discuss after seeing at the end we we will discuss about it.
+
+
+00:02:55
+Now let's see how this architecture works. The application puts messages. The application puts messages into Q manager sorry remote Q which is defined in Q manager one. The message is transferred to XM Q from remote Q where the message is stored here. First the application team will put the messages in remote Q under Q manager one.
+
+
+00:03:27
+ From here the messages will be passed to eximmit Q. Yeah, as we know exam Q is a transmission Q which is a special Q which holds messages. In exit Q which is a transmission Q we have initiation Q process and trigger data. As we discussed earlier exit Q holds a message until a trigger is appended. Messageer which has remote properties message descriptor which contains real messages.
+
+
+00:04:10
+ This high letter very important points we need to remember. Once the message header comes to the initiation queue trigger starts and the message will be transferred to local Q which is defined in Q manager to group channels. After the trigger starts, the message is transferred to sender channel which contains a receiver IP address.
+
+
+00:04:39
+ Through the network, the message gets transferred to the local Q from receiver channel. Here as we know the local Q defined in Q manager Q Q sorry Q manager 2 holds the messages from here the application team will get the messages through back jobs or transaction. Now let's see live examples with commands in in Q manager one which is a sender side as we discussed earlier it contains remote Q which is a destination Q properties eximmit Q and send channel here um remote Q is named as MQ Remote
+
+
+00:05:40
+remote Q manager is named as QMGR2. Remote Q name is named as MQ.lo. Exmit Q is named as MQ. Uh initiation Q is named as MQ in Q process which is not mandatory. So um I left it. Trigger data is also not mandatory. For example, I have used it. In trigger data, I have named as MQ T. In under Q manager to local Q, I have named as MQ.
+
+
+00:06:31
+Now let's see live examples with commands. Now we are creating remote cube. We need to create remote cube. First for that command is define Q remote Q remote which means remote Q and we need to give the name for remote Q. RQM name which mean remote Q manager name. R name mean remote Q name examit Q as we know it's a eximit Q once we define this uh remote Q now we are displaying remote Q what we have created the remote Q remote sorry display Q remote and the name of
+
+
+00:07:34
+the remote Q which is MQ remote. Now we are going to create XMT Q. For this the command is define Q local. Q local means local Q and the name of it usage XM Q init Q MQ init Q trigger data is T data T why we are using usage init Q because we are specifying the local Q because we need only XM Q not the local Q.
+
+
+00:08:12
+ So we are specifying it by putting usage command as eximmit Q. Now we are displaying like as we displayed remote Q the same follows display QL. QL means local Q name of the local Q. Now we are going to Now we are going to define sender channel. Define channel send channel name connection name. For reference I have given this but based based on your project the IP address and ports will differ.
+
+
+00:09:02
+CHL type which means channel type which is SDR and XM Q we need to put XM Q name. Now we are going to display send channel which is display channel channel name which is send channel name on MQ on Q manager 2 which is a receiver website. Now we need to create a local Q and receiver channel. Define channel name and the channel type is receiver.
+
+
+00:09:40
+Now we are going to display the receiver channel. Uh display channel uh channel name. Now we are creating local Q. Define Q local which means local Q and local Q name. Here we didn't use usage. Why we we need to use usage is while creating a eximit Q we need to tell it is a eximmit Q.
+
+
+00:10:09
+ So we are using usage of eximmit Q. Please make a note of it. Now we are displaying the local Q which is the command is display Q local MQ.lo. I hope you understand this concept. If you have any doubts, please watch from the first. Please refer this uh diagram which will be very helpful. Hope you understand well. If you face any issue or if you have any doubt, please comment below.
+
+
+00:10:48
+ I will help you out. Thank you guys. Bye-bye.
+

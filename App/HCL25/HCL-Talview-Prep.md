@@ -1,4 +1,60 @@
 # HCL Talview Interview Prep
+## Morning Revision Cheat Sheet (Bullet Points)
+
+### Core Background
+- 7 years IBM MQ on z/OS (Hursley Lab)
+- Production support, debugging, dumps, traces, SMF/RMF
+- Experience across CICS, DB2, IMS, batch chains, TLS, channels
+- Left IBM post-COVID restructuring; upskilled + project work (BitVault)
+- Ready for full-time mainframe engineering again
+
+### z/OS Fundamentals
+- IPL → LOADxx → PARMLIB (IEASYSxx, PROGxx, COMMxx)
+- SMP/E → APAR, PTF, GLOBAL/TARGET/DIST zones
+- TSO/ISPF/SDSF basics
+- JCL: JOB/EXEC/DD, S0C4/S0C7/U abends
+- RACF: ADDUSER, PERMIT, RLIST
+- USS: HFS/zFS, basic commands
+
+### Networking / TCPIP
+- PROFILE.TCPIP
+- NETSTAT (ALL, ROUTE, CONN)
+- AT-TLS basics
+- VTAM / SNA high-level awareness
+
+### Incident Resolution (Process)
+- Stay calm
+- Gather SDSF logs + dumps
+- Identify failing step/component
+- Use IPCS, SMF, traces
+- Communicate status
+- Apply fix safely → document → prevent recurrence
+
+### Key Example (MQ-heavy)
+- CHINIT crashing (5C6-00C51002)
+- Root cause: runaway buffer usage from deep queues
+- Tools: SDSF, IPCS VERBX, SMF 115/116, DISPLAY BUFFERPOOL
+- Fix: rebalance bufferpools, adjust batching logic
+- Prevention: thresholds + monitoring
+
+### JCL / Batch Triage
+- Identify failing step
+- Check DD statements / datasets
+- Look for S0C7 (bad data), S0C4 (pointer), U abends
+- SDSF JESMSGLG + ABEND report
+- Validate rerun strategy
+
+### Why HCL?
+- Large enterprise estates
+- Deep mainframe engineering still valued
+- Banking environments align with experience
+- Growth + stability
+
+### 60-Second Intro (Bullets)
+- Name, 7 years IBM MQ z/OS
+- Debugging, dumps, SMF/RMF
+- Post-IBM: upskilling + engineering work
+- Looking to return to mainframe full-time
 **Author:** JDW  
 **Role:** Associate (Mainframe) – HCL Technologies  
 **Interview Date:** Tue 25 Nov 2025  
@@ -121,6 +177,9 @@ Practice giving **60–90 second** answers.
 - Spent time working in Bitcoin/startup world  
 - Returning to mainframe because it’s your technical home  
 
+### Sample Answer (Expanded)
+I have over seven years of experience working at IBM Hursley supporting MQ on z/OS for major global banks. My work involved production support, system debugging, and deep technical investigation across queue managers, channels, storage, and batch flows. I developed strong skills in SDSF analysis, IPCS dump reading, SMF/RMF interpretation, and cross-team collaboration. After COVID the organisation changed direction, and I decided to take some time for personal development and to work on a smaller technical project while continuing to upskill in z/OS. I’m now ready to return to a full-time mainframe engineering path, which is where I’ve always done my best work.
+
 ---
 
 ## **Q2. Why do you want to join HCL Technologies?**
@@ -130,7 +189,11 @@ Practice giving **60–90 second** answers.
 - Excited to contribute to reliability & production support  
 - Long-term stable career  
 
+### Sample Answer (Expanded)
+I want to join HCL because it offers exposure to large enterprise mainframe estates where deep technical engineering still matters. My background with IBM MQ on z/OS has given me strong diagnostic and production support skills, and HCL’s work across banking and financial systems aligns closely with my experience. I’m particularly interested in the variety of environments and tooling HCL engineers work with, as well as the opportunity to grow through real-world challenges. HCL’s global reach and technical culture make it the right place for me to contribute and develop long-term.
+
 ---
+
 
 ## **Q3. Describe a difficult technical challenge you solved.**
 Use the MQ channel abend example or storage violation example.
@@ -141,6 +204,11 @@ Structure:
 3. Tools used (SDSF, IPCS, RMF, SMF)  
 4. Fix  
 5. Long-term prevention  
+
+### MQ-Heavy Example (CHINIT Storage Abend)
+
+**Example: MQ Channel Initiator Storage Abend (5C6-00C51002)**  
+A test environment experienced repeated MQ CHINIT failures every few hours, disrupting application testing. Logs and IPCS analysis showed uncontrolled buffer growth caused by a misconfigured application creating deep queue buildup and runaway storage. Using SDSF, DISPLAY commands, SMF 115/116, and IPCS VERBX diagnostics, I identified the overload pattern, rebalanced bufferpool allocations, and coordinated with the application team to adjust batching logic. The change restored stability, and I implemented monitoring thresholds and trend checks to prevent recurrence.
 
 ---
 
@@ -153,6 +221,9 @@ Checklist:
 - Apply fix safely  
 - Document & prevent recurrence  
 
+### Sample Answer (Expanded)
+When an incident occurs, my first priority is to stay calm and gather the right evidence. I begin with SDSF logs, system messages, and any abend or dump output. From there I narrow the problem: Is it an application issue, a JCL error, a configuration change, or an environmental fault? I use IPCS, SMF data, and subsystem traces to confirm the root cause. I communicate clearly with stakeholders throughout so everyone knows what is happening. Once the fix is applied, I ensure documentation is updated, and I follow up with a prevention step so the issue does not repeat.
+
 ---
 
 ## **Q5. What is your experience with JCL and batch problem determination?**
@@ -161,6 +232,9 @@ Checklist:
 - Understanding of abends (S0C4, S0C7, U codes)  
 - Experience triaging failed batch chains  
 - Familiar with scheduler output via SDSF  
+
+### Sample Answer (Expanded)
+I’m comfortable reading and modifying JCL to diagnose failures. I understand key abends such as S0C4, S0C7, and U-codes, and I’ve handled many cases where bad data, incorrect DD statements, missing datasets, or scheduling issues caused batch failures. In previous roles I used SDSF extensively to review JES logs, job output, and system messages. Where necessary, I traced the flow downstream to CICS, DB2, or MQ to identify data integrity or timing issues. My approach is methodical: identify the failing step, isolate the cause, correct the input or JCL, validate, and document for future runs.
 
 ---
 

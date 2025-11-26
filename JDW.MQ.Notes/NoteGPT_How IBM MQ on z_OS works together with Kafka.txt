@@ -1,0 +1,12 @@
+
+00:00:01
+a common use case we're seeing as more and more mq customers adopt a hybrid Cloud strategy is the need to connect mq with Kafka if you're not familiar with Kafka it's an open source event-centric platform developed specifically to stream a high volume of digital records as an example you might want to use mq with Kafka to stream inventory changes from your db2 database running on Z OS out to Kafka via mq messages Apache Kafka servers can also be referred to as Kafka Brokers are organized into clusters with the Kafka Connector running on zos data can be passed between mq subsystems and your Kafka clusters the Kafka connector does not need to be run on the same server as the Kafka broker it's utilizing you can either use Kafka connector as a sync connector or as a source connector a sync connector passes data in the direction of Kafka to
+
+
+00:01:02
+mq whereas the source connector passes message data in the direction of mq to Kafka when the mq source connector reads a message from mq it chooses a schema to represent the message format and creates an internal object called a record containing the message value each record is then processed using a converter which creates the message that's then published on a Kafka topic as of mq 9.
+
+
+00:01:27
+3 mq contains a streaming Q feature which allows a message that's put to a queue to be duplicated to a secondary queue called The Stream queue you can use streaming cues in conjunction with the Kafka Source connector in two main ways firstly if you want to be able to stream a copy of existing data moving through mq into Kafka or secondly if you want a way to get data into Kafka that ensures that the data is only sent if the transaction on zos commits successfully using Kafka with streaming cues enables you to stream Z OS message traffic without impacting performance on cos
+
