@@ -16,3 +16,6 @@ Myur.NOTES.txt
 
 # everything under app for now 
 /App*
+
+#transcripts
+NoteGPT*
